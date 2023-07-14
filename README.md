@@ -55,3 +55,8 @@ The `Autoreports` module generates automatic reports based on a date (one month 
   - requests: Library for making HTTP requests (Install with `pip install requests`)
   - beautifulsoup4: Library for web scraping (Install with `pip install beautifulsoup4`)
   - Additional dependencies may be required based on the specific modules used.
+ 
+## Output from MISP
+
+<img width="1160" alt="image" src="https://github.com/h3st4k3r/PlayingWithMISP/assets/40382991/d0777bba-32c4-4c88-a5d3-51b269774131">
+
