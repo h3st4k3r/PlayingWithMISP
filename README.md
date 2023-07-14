@@ -44,11 +44,11 @@ Feel free to customize the code and enable additional modules according to your 
 
 ### Phishtank
 
-The `Phishtank` module is responsible for gathering phishing URLs from the Phishtank API and uploading new events to MISP for further analysis.
+The `Phishtank` module is designed for gathering phishing URLs from the Phishtank API and uploading new events to MISP for further analysis.
 
 ### Phishstats
 
-The `Phishstats` module (currently commented out in the code) is designed to gather phishing URLs from the Phishstats API and upload them to MISP.
+The `Phishstats` module is designed to gather phishing URLs from the Phishstats API and upload them to MISP.
 
 ### Autoreports
 
@@ -59,4 +59,6 @@ The `Autoreports` module (currently commented out in the code) generates automat
 - Python 3.x
 - Dependencies:
   - `pymisp`: Python library for interacting with the MISP API (Install with `pip install pymisp`)
+  - requests: Library for making HTTP requests (Install with `pip install requests`)
+  - beautifulsoup4: Library for web scraping (Install with `pip install beautifulsoup4`)
   - Additional dependencies may be required based on the specific modules used.
