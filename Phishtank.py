@@ -45,7 +45,7 @@ class phishtank():
                     "Attribute": [
                                   {"title": "Phishtank case: "+str(url)},
                                   {"description": "New phishing case on "+str(url)+" reported by "+str(username)+" ID Case "+str(phishing_id)},
-                                  {"tags": ["phishing", "username", "url"]},
+                                  {"tags": ["phishing", "url"]},
                                   { "threat_level": "LOW"},
                                   {"confidence": "LOW"},
                                   {"source": "PHISHTANK CRAWLER"},
