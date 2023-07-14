@@ -52,7 +52,7 @@ The `Phishstats` module is designed to gather phishing URLs from the Phishstats 
 
 ### Autoreports
 
-The `Autoreports` module (currently commented out in the code) generates automatic reports based on a specified number of events in MISP. These reports can be used for analysis or sharing with other users.
+The `Autoreports` module generates automatic reports based on a date (one month ago). These reports can be used for analysis or sharing with other users.
 
 ## Requirements
 
