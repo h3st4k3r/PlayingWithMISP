@@ -12,17 +12,17 @@ To use the application, follow these steps:
 import Phishtank
 import Phishstats
 import Autoreports
-events_to_report = 5
 
 if name == 'main':
-misp_url = 'your_misp_url'
-misp_key = 'your_api_key'
-phishtank_module = Phishtank.phishtank(misp_url, misp_key)
-phishtank_module.run()
-phishstats_module = Phishstats.phishstats()
-phishstats_module.run()
-autoreports_module = Autoreports.Reporting(misp_url, misp_key, events_to_report)
-autoreports_module.run()
+  misp_url = 'your_misp_url'
+  misp_key = 'your_api_key'
+  events_to_report = 5
+  phishtank_module = Phishtank.phishtank(misp_url, misp_key)
+  phishtank_module.run()
+  phishstats_module = Phishstats.phishstats()
+  phishstats_module.run()
+  autoreports_module = Autoreports.Reporting(misp_url, misp_key, events_to_report)
+  autoreports_module.run()
 ```
 
 Make sure to replace `'your_misp_url'` with the URL of your MISP instance and `'your_api_key'` with your MISP API key. Uncomment the relevant lines according to the modules you want to run.
