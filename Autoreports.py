@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+* @Author h3st4k3r
+* @Version Mark.1
+* With this class you will be able to generate the latest monthly report based on your MISP. 
+* You will have to change the path where you want to save it.
+* GNU General Public License
+* This script is part of Hegemon's shadow project
+*
+"""
+
 from pymisp import ExpandedPyMISP
 from docx import Document
 import datetime
