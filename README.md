@@ -8,6 +8,7 @@ To use the application, follow these steps:
 
 1. Create a `main.py` file with the following code:
 
+```python
 import Phishtank
 import Phishstats
 import Autoreports
@@ -22,7 +23,7 @@ phishstats_module.run()
 events_to_report = 5
 autoreports_module = Autoreports.Reporting(misp_url, misp_key, events_to_report)
 autoreports_module.run()
-
+```
 
 Make sure to replace `'your_misp_url'` with the URL of your MISP instance and `'your_api_key'` with your MISP API key. Uncomment the relevant lines according to the modules you want to run.
 
