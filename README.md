@@ -12,6 +12,7 @@ To use the application, follow these steps:
 import Phishtank
 import Phishstats
 import Autoreports
+events_to_report = 5
 
 if name == 'main':
 misp_url = 'your_misp_url'
@@ -20,7 +21,6 @@ phishtank_module = Phishtank.phishtank(misp_url, misp_key)
 phishtank_module.run()
 phishstats_module = Phishstats.phishstats()
 phishstats_module.run()
-events_to_report = 5
 autoreports_module = Autoreports.Reporting(misp_url, misp_key, events_to_report)
 autoreports_module.run()
 ```
@@ -45,7 +45,7 @@ The `Phishstats` module is designed to gather phishing URLs from the Phishstats 
 
 ### Autoreports
 
-The `Autoreports` module generates automatic reports based on a date (one month ago). These reports can be used for analysis or sharing with other users.
+The `Autoreports` module generates automatic reports based on a date (one month ago) and based on a number (in this case 5). These reports can be used for analysis or sharing with other users.
 
 ## Requirements
 
