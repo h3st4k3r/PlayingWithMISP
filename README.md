@@ -8,14 +8,6 @@ To use the application, follow these steps:
 
 1. Create a `main.py` file with the following code:
 
-#!/usr/bin/env python
-
--- coding: utf-8 --
-"""
-Author: h3st4k3r
-Version: Mark.1
-"""
-
 import Phishtank
 import Phishstats
 import Autoreports
