@@ -60,3 +60,7 @@ The `Autoreports` module generates automatic reports based on a date (one month 
 
 <img width="1160" alt="image" src="https://github.com/h3st4k3r/PlayingWithMISP/assets/40382991/d0777bba-32c4-4c88-a5d3-51b269774131">
 
+## Note
+
+These crawlers can be run via cron to get the most out of them. In this way, we can ensure that we constantly obtain information in real time and without missing anything.
+
