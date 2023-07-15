@@ -53,6 +53,7 @@ The `Autoreports` module generates automatic reports based on a date (one month 
 ### ZoneH
 
 The `ZoneH`module is designed for gathering defacement in from ZoneH and upload it directly to MISP. In this case we use diferent User-Agents to evade captcha.
+If you want to replace more User-Agents watch the `agents.md` file.
 
 ## Requirements
 
