@@ -62,7 +62,11 @@ The `ZoneH`module is designed for gathering defacement in from ZoneH and upload 
  
 ## Output from MISP
 
+Here you can watch how we get information from Phishtank and Phishstats:
+
 <img width="1160" alt="image" src="https://github.com/h3st4k3r/PlayingWithMISP/assets/40382991/d0777bba-32c4-4c88-a5d3-51b269774131">
+
+And here you can watch how we get information from ZoneH:
 
 <img width="999" alt="image" src="https://github.com/h3st4k3r/PlayingWithMISP/assets/40382991/c80f655a-c02d-43ba-a6ce-f64d69f9b056">
 
@@ -70,4 +74,8 @@ The `ZoneH`module is designed for gathering defacement in from ZoneH and upload 
 ## Note
 
 These crawlers can be run via cron to get the most out of them. In this way, we can ensure that we constantly obtain information in real time and without missing anything.
+
+## Licence
+
+This project is licensed under the GNU License.
 
