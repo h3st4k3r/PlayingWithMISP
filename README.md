@@ -12,6 +12,7 @@ To use the application, follow these steps:
 import Phishtank
 import Phishstats
 import Autoreports
+import ZoneH
 
 if name == 'main':
   misp_url = 'your_misp_url'
@@ -23,6 +24,8 @@ if name == 'main':
   phishstats_module.run()
   autoreports_module = Autoreports.Reporting(misp_url, misp_key, events_to_report)
   autoreports_module.run()
+  zoneh_module = ZoneH.ZoneHScraper(misp_url, misp_key)
+  zoneh_module.run()
 ```
 
 Make sure to replace `'your_misp_url'` with the URL of your MISP instance and `'your_api_key'` with your MISP API key. Uncomment the relevant lines according to the modules you want to run.
@@ -55,9 +58,10 @@ The `ZoneH`module is designed for gathering defacement in from ZoneH and upload 
 
 - Python 3.x
 - Dependencies:
-  - `pymisp`: Python library for interacting with the MISP API (Install with `pip install pymisp`)
-  - requests: Library for making HTTP requests (Install with `pip install requests`)
-  - beautifulsoup4: Library for web scraping (Install with `pip install beautifulsoup4`)
+  - **pymisp**: Python library for interacting with the MISP API (Install with `pip install pymisp`)
+  - **requests**: Library for making HTTP requests (Install with `pip install requests`)
+  - **beautifulsoup4**: Library for web scraping (Install with `pip install beautifulsoup4`)
+  - **Selenium:** Library for automating browser actions (Install with `pip install selenium`)
   - Additional dependencies may be required based on the specific modules used.
  
 ## Output from MISP
