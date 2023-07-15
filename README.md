@@ -78,7 +78,7 @@ And here you can watch how we get information from ZoneH:
 ## Note
 
 These crawlers can be run via cron to get the most out of them. In this way, we can ensure that we constantly obtain information in real time and without missing anything.
-These scripts are for didactic purposes only; future enhancements will include implementations that leave the data standardised for MISP.
+These scripts are for didactic purposes only; future enhancements will include implementations that leave the data standardised for MISP (watch: https://github.com/MISP/misp-playbooks/tree/main/documentation).
 
 ## Licence
 
