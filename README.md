@@ -30,7 +30,7 @@ if name == 'main':
 
 Make sure to replace `'your_misp_url'` with the URL of your MISP instance and `'your_api_key'` with your MISP API key. Uncomment the relevant lines according to the modules you want to run.
 
-Or maybe, if you want, you can use the config.ini file:
+Or maybe, if you want, you can use the `config.ini` file:
 
 ```python
 import Defacements
