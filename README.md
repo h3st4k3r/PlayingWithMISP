@@ -30,6 +30,34 @@ if name == 'main':
 
 Make sure to replace `'your_misp_url'` with the URL of your MISP instance and `'your_api_key'` with your MISP API key. Uncomment the relevant lines according to the modules you want to run.
 
+Or maybe, if you want, you can use the config.ini file:
+
+```python
+import Defacements
+import Phishtank
+import Phishstats
+import Autoreports
+import ZoneH
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+if __name__ == '__main__':
+    misp_url = config.get('misp', 'url')
+    misp_key = config.get('misp', 'key')
+    misp_verifycert = config.getboolean('misp', 'verifycert')
+    phishtank_module = Phishtank.phishtank(misp_url, misp_key)
+    phishtank_module.run()
+    phishtstats_module = Phishstats.phishstats(misp_url, misp_key)
+    phishtstats_module.run()
+    events_to_report=5
+    autoreports_module = Autoreports.Reporting(misp_url, misp_key,events_to_report)
+    autoreports_module.run()
+    zoneh_module = ZoneH.ZoneHScraper(misp_url, misp_key)
+    zoneh_module.run()
+```
+
 2. Run the application by executing the following command in your terminal: `python3 main.py`
 
 This will execute the specified modules, interacting with the MISP API based on the provided configuration.
